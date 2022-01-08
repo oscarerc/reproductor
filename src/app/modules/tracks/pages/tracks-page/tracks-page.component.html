@@ -1,1 +1,10 @@
 <h1>BIENBENIDO A LAS CANCIONES</h1>
+<div class="track-page">
+    <!-- a cada uno de los componentes queremos pasarle datos independientes -->
+    <!-- se hace con el decorador input -->
+    <!-- section top small-->
+    <!-- LLAMAMOS EL DECORADOR MEDIANTE LLAVESs -->
+    <app-section-generic [dataTracks]="mockTracksList" [mode]="'small'" [title]="'!La mejor musica del mundo!'"></app-section-generic>
+    <!-- section medium grande -->
+    <app-section-generic [dataTracks]="mockTracksList" [mode]="'big'" [title]="'Lo mejor de electronica'"></app-section-generic>
+</div>

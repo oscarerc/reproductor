@@ -1,0 +1,15 @@
+<div class="section--generic">
+    <h1 class="section--generic__title">{{title}}</h1>
+
+    <div class="section--generic__player--zone">
+        <!-- se aplican la clase de acuerdo al input con ngclass manejando condicionales -->
+         <ul class="player--list" [ngClass]="{'card-small':mode === 'small' , 'card-big':mode === 'big'}">
+             <li *ngFor="let track of dataTracks">
+                 <app-card-player ></app-card-player> 
+                <!-- la pipeta json nos permite mopstrar datos cuando sabemos que existen -->
+                <!-- {{track.name}}- -->
+                <!-- {{track.name}}- -->
+            </li> 
+        </ul>  
+    </div>
+</div>
