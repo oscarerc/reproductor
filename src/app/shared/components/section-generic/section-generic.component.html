@@ -5,7 +5,7 @@
         <!-- se aplican la clase de acuerdo al input con ngclass manejando condicionales -->
          <ul class="player--list" [ngClass]="{'card-small':mode === 'small' , 'card-big':mode === 'big'}">
              <li *ngFor="let track of dataTracks">
-                 <app-card-player ></app-card-player> 
+                 <app-card-player  [track]="track" [mode]="mode" ></app-card-player> 
                 <!-- la pipeta json nos permite mopstrar datos cuando sabemos que existen -->
                 <!-- {{track.name}}- -->
                 <!-- {{track.name}}- -->
