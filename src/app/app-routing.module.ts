@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from '@modules/home/pages/homepage/homepage.component';
 
+// rutas padre router outlet
+
 const routes: Routes = [
   // aqui estan los modulos mayopres los que pueden destruir
   {
