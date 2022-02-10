@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomepageComponent } from '@modules/home/pages/homepage/homepage.component';
+import { SessionGuard } from './guards/session.guard';
 
 // rutas padre router outlet
 
@@ -14,7 +15,9 @@ const routes: Routes = [
     // este es el que va a hacer referencia a nivel de raiz
     path:'',
     component: HomepageComponent,
-    loadChildren: ()=>import(`../app/modules/home/home.module`).then(m=>m.HomeModule)
+    loadChildren: ()=>import(`../app/modules/home/home.module`).then(m=>m.HomeModule),
+    // guard que contiene guardianes
+    canActivate:[SessionGuard]
   }
 ];
 
